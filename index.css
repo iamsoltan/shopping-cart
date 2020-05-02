@@ -1,0 +1,309 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+
+}
+
+.card img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:#0275d8;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cart{
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 25px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+#items-carted{
+    color : blue;
+}
+
+
+/*****************************Modal*******************************************/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+/*****************************end Modal*******************************************/
+.line{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  margin: 4px;
+}
+
+.line img{
+  width: 50px;
+  height: 40px;
+  object-fit: cover; 
+}
+
+.line h3{
+  width: 100px;
+  margin: auto;
+}
+.decreaser{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+.quantity{
+  width: 100px;
+  margin: auto;
+}
+
+.adder{
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+
+}
+
+.subtotal{
+  width: 100px;
+  margin: auto;
+}
+
+.remover{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+.checkout{
+  width: 150px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+/*------------------------------------------------*/
+
+
+
+.slide img{
+  width: 500px;
+  height: 500px;
+}
+
+.slide {
+  margin: auto;
+  max-width: 1800px;
+  margin-bottom: 20px;
+}
+
+.qwarit {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+
+.qwarit img{
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 200px;
+}
+
+
+.unique-form{
+  width:500px;
+  border:2px solid #E74C3C;
+  padding:2em;
+  border-radius:5px;
+  margin: auto;
+}
+
+section{
+  background-color:#2980B9;
+  max-width:500px;
+  margin:10px auto;
+  border:1px solid #2980B9;
+  padding: 10px;
+  border-radius:5px;
+  text-align: center;
+  color: white;
+}
+
+form>div{
+  display: flex;
+  margin: 3px;
+}
+
+label{
+  display:block;
+  padding:.5em;
+  margin-right: 5px;
+  text-transform:uppercase;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  border:2px solid #2980B9;
+  border-radius:5px;
+  color: white;
+  background-color: #2980B9;
+}
+
+input, textarea{
+  display:block;
+  width:100%;
+  border:2px solid #2980B9;
+  padding:.5em;
+  border-radius:5px;
+}
+  
+
+
+.send-btn{
+  border:0;
+  background:#058605e5;
+  padding:10px;
+  color:white;
+  margin-top: 10px;
+  width:100%;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:.3s background ease;
+  
+}
+.send-btn:hover{
+  background:#3498DB;
+}
+
+
+.footer{
+  background: #232323;
+  padding: 30px 0 0 0;
+  font-size: 12px;
+  color: #999;
+  margin-top: 20px;
+}
